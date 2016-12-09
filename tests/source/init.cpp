@@ -34,7 +34,7 @@ SCENARIO("calculator dizero", "[dizero]") {
     
     double rv = di(a,b);
     
-	REQUIRE( rv == "Enable value for b" );
+	REQUIRE( rv == "Enable" );
 }
 SCENARIO("calculator di", "[di]") {
     double a = 16.0;
@@ -65,7 +65,7 @@ SCENARIO("calculator squareroota", "[squareroota]") {
     
     double rv = squareroot(a);
     	
-REQUIRE( rv == "Enable value for a" );
+REQUIRE( rv == "Enable" );
 }
 SCENARIO("calculator squareroot", "[squareroot]") {
     double a = 16.0;
