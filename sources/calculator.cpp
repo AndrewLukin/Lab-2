@@ -6,15 +6,10 @@ double sub(double a, double b)
 {
     return a-b;
 }
-long double *di(double a, double b) {
-    if (b != 0){
-        long double *res = new long double;
-        *res = a/b;
-        return res;
-    }
-    else
-        return nullptr;
-    }
+double di(double a, double b)
+{
+    return a/b;
+}
 double multip(double a, double b)
 {
     return a*b;
