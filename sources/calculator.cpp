@@ -8,6 +8,8 @@ double sub(double a, double b)
 }
 double di(double a, double b)
 {
+	if(b==0)
+		throw "Enable value for b";
     return a/b;
 }
 double multip(double a, double b)
@@ -27,6 +29,8 @@ double power(double a, int c)
 }
 double squareroot(double a)
 {
+	if(a<0)
+		throw "Enable value for a";
 	double xn = 1.0;  
 	double xn1 = 2.0;
 
