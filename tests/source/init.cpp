@@ -32,9 +32,9 @@ SCENARIO("calculator dizero", "[dizero]") {
     double a = 16.0;
     double b = 0.0;	
     
-    double rv = di(a,b);
+    double dizero = di(a,b);
     
-	REQUIRE( rv == "Enable" );
+	REQUIRE( dizero == "Enable value for b" );
 }
 SCENARIO("calculator di", "[di]") {
     double a = 16.0;
@@ -56,16 +56,16 @@ SCENARIO("calculator powera", "[powera]") {
     double a = 16.0;
     int c = -3;
 	
-    double rv = power(a,c);
+    double powermi = power(a,c);
     
-	REQUIRE( rv == 0.000244 );
+	REQUIRE( powermi == 0.000244 );
 }
 SCENARIO("calculator squareroota", "[squareroota]") {
     double a = -16.0;
     
-    double rv = squareroot(a);
+    double squarerootmi = squareroot(a);
     	
-REQUIRE( rv == "Enable" );
+REQUIRE( squarerootmi == "Enable value for a" );
 }
 SCENARIO("calculator squareroot", "[squareroot]") {
     double a = 16.0;
