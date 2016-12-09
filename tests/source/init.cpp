@@ -56,14 +56,14 @@ SCENARIO("calculator powera", "[powera]") {
     double a = 16.0;
     int c = -3;
 	
-    double powermi = power(a,c);
+    double powermi = powermi(a,c);
     
 	REQUIRE( powermi == 0.000244 );
 }
 SCENARIO("calculator squareroota", "[squareroota]") {
     double a = -16.0;
     
-    double squarerootmi = squareroot(a);
+    double squarerootmi = squarerootmi(a);
     	
 REQUIRE( squarerootmi == "Enable value for a" );
 }
