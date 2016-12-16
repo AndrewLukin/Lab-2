@@ -32,7 +32,7 @@ SCENARIO("calculator dizero", "[dizero]") {
     double a = 16.0;
     double b = 0.0;	
     
-    double dizero = di(a,b);
+    char dizero = di(a,b);
     
 	REQUIRE( dizero == "Enable value for b" );
 }
@@ -56,14 +56,14 @@ SCENARIO("calculator powera", "[powera]") {
     double a = 16.0;
     int c = -3;
 	
-    double powermi = powermi(a,c);
+    double powermi = power(a,c);
     
 	REQUIRE( powermi == 0.000244 );
 }
 SCENARIO("calculator squareroota", "[squareroota]") {
     double a = -16.0;
     
-    double squarerootmi = squarerootmi(a);
+    char squarerootmi = squarerootmi(a);
     	
 REQUIRE( squarerootmi == "Enable value for a" );
 }
