@@ -63,7 +63,7 @@ SCENARIO("calculator powera", "[powera]") {
 SCENARIO("calculator squareroota", "[squareroota]") {
     double a = -16.0;
     
-    char squarerootmi = squarerootmi(a);
+    char squarerootmi = squareroot(a);
     	
 REQUIRE( "Enable value for a" );
 }
