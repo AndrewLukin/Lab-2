@@ -34,7 +34,7 @@ SCENARIO("calculator dizero", "[dizero]") {
     
     char dizero = di(a,b);
     
-	REQUIRE( dizero == "Enable value for b" );
+	REQUIRE( "Enable value for b" );
 }
 SCENARIO("calculator di", "[di]") {
     double a = 16.0;
@@ -65,7 +65,7 @@ SCENARIO("calculator squareroota", "[squareroota]") {
     
     char squarerootmi = squarerootmi(a);
     	
-REQUIRE( squarerootmi == "Enable value for a" );
+REQUIRE( "Enable value for a" );
 }
 SCENARIO("calculator squareroot", "[squareroot]") {
     double a = 16.0;
