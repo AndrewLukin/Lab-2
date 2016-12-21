@@ -57,7 +57,7 @@ double power ( float a, int extent,  int c)
 	else if ( a == 0 && extent == 0 ) return 1;
 	
 }
-double *squareroot ( double a, int c )
+double squareroot ( double a, int c )
 {
 	float xn = 1.0;  
 	float xn1 = 2.0;
