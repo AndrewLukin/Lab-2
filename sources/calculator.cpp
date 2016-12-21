@@ -25,7 +25,7 @@ double multip(double a, double b)
 {
 	return a*b;
 }
-double pow ( float a, int extent,  int c)
+double power ( float a, int extent,  int c)
 {
 	float a2 = a;
 	
