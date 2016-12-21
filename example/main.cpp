@@ -5,23 +5,26 @@ using namespace std;
 
 int main()
 {
-	double a, b;
-	int c;
+    	double a = 0.0;
+	double b = 0.0;
+	int* c = (int*)malloc(sizeof(int));
+	int* extent = (int*)malloc(sizeof(int));
+	*c = 0;
+	*extent = 0;
 	cin >> a;
 	cin >> b;
-	cin >> c;
-	cout << sum(a, b) << endl;
-	cout << sub(a, b) << endl;
-	cout << multip(a, b) << endl;
-	long double result = di(a, b);
-	if (result != NULL)
-		cout << result << endl;
-	else
-		cout << "Invalid value for b" << endl;
-	cout << power(a, c) << endl;
-	long double result1 = squareroot(a);
-	if (result1) cout << squareroot(a) << endl;
-	else cout << "Invalid value for a" << endl;
-	system("pause");
+	cout << endl << sum(a,b) << endl;
+	cout << sub(a,b) << endl;
+	cout << mult(a,b) << endl;
+	div(a,b,c);
+	if ( *c == 0 ) cout << "a / b = " << div(a,b,c) << endl;
+		else cout << "Invalid value for b" << endl;
+	cout << "a^e, print e = ";
+	cin >> *extent;
+	pow(a, extent, c);
+	if ( *c == 0 ) cout << "a^e = " << pow(a, extent, c) << endl;
+	squareroot(a,c);
+	if ( *c == 0 ) cout << "sqrt(a) = " << squareroot(a,c) << endl;
+		else cout << "Invalid value for a" << endl;
 	return 0;
 }
