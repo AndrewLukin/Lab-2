@@ -8,7 +8,7 @@ double sub(double a, double b)
 }
 double *di ( double a,  double b, int c)
 {
-	float d;
+	double d;
 	if ( a != 0 && b != 0  ) 
 	{ 
 
@@ -61,7 +61,7 @@ double *squareroot ( double a, int c )
 {
 	float xn = 1.0;  
 	float xn1 = 2.0;
-	float d;
+	double d;
 	if ( a >= 0 )
 	{
 		c = 0;
