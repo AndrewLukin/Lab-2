@@ -14,7 +14,7 @@ double di(double a, double b)
 		*p = a / b;
 		return *p;
 	}
-	else return NULL;
+	else return nullptr;
 }
 double multip(double a, double b)
 {
@@ -52,5 +52,5 @@ double squareroot(double a)
 		return xn;
 	}
 	else
-		return NULL;
+		return nullptr;
 }
