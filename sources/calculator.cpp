@@ -25,16 +25,36 @@ double multip(double a, double b)
 {
 	return a*b;
 }
-double power(double a, int c)
+double pow ( float a, int* extent,  int* c)
 {
-	double a1 = 1;
-	if (c>0)
-		for (int i = 0; i < c; i++)
-			a1 = a1*a;
-	if (c<0)
-		for (int i = 0; i < (-c); i++)
-			a1 = a1 / a;
-	return a1;
+	float a2 = a;
+	
+	if ( a != 0 )
+	{
+		*c = 0;
+		if ( *extent < 0 )
+	{
+		for (unsigned int i = 1; i < -*extent; ++i)
+		{
+			a = a * a2;
+		}
+		a = (float)1 / a;
+	}
+	    else if ( *extent > 0 ) 
+	    {
+			for (unsigned int i = 1; i < *extent; ++i)
+		    {
+			a = a * a2;
+		    }
+	    }
+		else a = 1.0;
+	
+	return (double) a;
+	}
+	else if ( a == 0 && *extent < 0 ) *c = 1;
+	else if ( a == 0 && *extent > 0 ) return 0;
+	else if ( a == 0 && *extent == 0 ) return 1;
+	
 }
 double *squareroot ( double a, int* c )
 {
