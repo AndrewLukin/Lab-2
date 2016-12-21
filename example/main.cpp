@@ -17,14 +17,13 @@ int main()
 	cout << sub(a,b) << endl;
 	cout << mult(a,b) << endl;
 	div(a,b,c);
-	if ( *c == 0 ) cout << "a / b = " << div(a,b,c) << endl;
+	if ( *c == 0 ) cout << div(a,b,c) << endl;
 		else cout << "Invalid value for b" << endl;
-	cout << "a^e, print e = ";
 	cin >> *extent;
 	pow(a, extent, c);
-	if ( *c == 0 ) cout << "a^e = " << pow(a, extent, c) << endl;
+	if ( *c == 0 ) cout << pow(a, extent, c) << endl;
 	squareroot(a,c);
-	if ( *c == 0 ) cout << "sqrt(a) = " << squareroot(a,c) << endl;
+	if ( *c == 0 ) cout << squareroot(a,c) << endl;
 		else cout << "Invalid value for a" << endl;
 	return 0;
 }
