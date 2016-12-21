@@ -14,7 +14,7 @@ int main()
 	cout << sub(a, b) << endl;
 	cout << multip(a, b) << endl;
 	long double result = di(a, b);
-	if (result != NULL)
+	if (result != nullptr)
 		cout << result << endl;
 	else
 		cout << "Invalid value for b" << endl;
