@@ -40,7 +40,7 @@ SCENARIO("calculator dizero", "[dizero]") {
     double a = 16.0;
     double b = 0.0;	
     
-    double rv = di(a,b);
+    double *rv = di(a,b);
     
 	REQUIRE( rv == nullptr );
 }
@@ -70,7 +70,7 @@ REQUIRE( rv == 4 );
 SCENARIO("calculator squareroota", "[squareroota]") {
     double a = -16.0;
     
-    double rv = squareroot(a);
+    double *rv = squareroot(a);
     	
 REQUIRE( rv == nullptr );
 }
