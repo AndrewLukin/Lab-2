@@ -37,20 +37,24 @@ SCENARIO("calculator di", "[di]") {
 	REQUIRE( rv == 4 );
 }
 SCENARIO("calculator dizero", "[dizero]") {
-    double a = 16.0;
-    double b = 0.0;	
+    float a = 1.0;
+    float b = 0.0;
+    int* c = (int*)malloc(sizeof(int));
     
-    double *rv = di(a,b);
+    double *rv = div( a, b, c );
     
 	REQUIRE( rv == nullptr );
 }
 SCENARIO("calculator power", "[power]") {
-    double a = 16.0;
-    int c = 3;
-	
-    double rv = power(a,c);
+    float a = 2.0;
+    float b = 1.0;
+    int* extent = (int*)malloc(sizeof(int));
+    int* c = (int*)malloc(sizeof(int));
+    *extent = -1;
     
-	REQUIRE( rv == 4096.0 );
+    double rv = pow( a, extent, c );
+    
+	REQUIRE( rv == 0.5 );
 }
 SCENARIO("calculator powera", "[powera]") {
     double a = 16.0;
@@ -68,9 +72,10 @@ SCENARIO("calculator squareroot", "[squareroot]") {
 REQUIRE( rv == 4 );
 }
 SCENARIO("calculator squareroota", "[squareroota]") {
-    double a = -16.0;
+    float a = -9.0;
+    float b = 1.0;
+    int* c = (int*)malloc(sizeof(int));
     
-    double *rv = squareroot(a);
-    	
-REQUIRE( rv == nullptr );
+    double *rv = sq( a, c );  
+	REQUIRE( rv == nullptr );
 }
