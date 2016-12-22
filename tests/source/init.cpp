@@ -2,31 +2,31 @@
 #include <catch.hpp>
 
 SCENARIO("calculator sum", "[sum]") {
-    float a = 7.0;
-    float b = 3.0;
+    float a = 9.0;
+    float b = 1.0;
     
     double rv = sum( a, b );
     
 	REQUIRE( rv == 10.0 );
 }
 SCENARIO("calculator sub", "[sub]") {
-    float a = 7.0;
-    float b = 3.0;
+    float a = 9.0;
+    float b = 1.0;
     
     double rv = sub( a, b );
     
-	REQUIRE( rv == 4.0 );
+	REQUIRE( rv == 8.0 );
 }
-SCENARIO("calculator multiplication", "[mult]") {
-    float a = 7.0;
-    float b = 3.0;
+SCENARIO("calculator mult", "[mult]") {
+    float a = 9.0;
+    float b = 1.0;
     
     double rv = multip( a, b );
     
-	REQUIRE( rv == 21.0 );
+	REQUIRE( rv == 9.0 );
 }
-SCENARIO("calculator di", "[di]") {
-    float a = 7.0;
+SCENARIO("calculator div", "[div]") {
+    float a = 1.0;
     float b = 0.0;
     int* c = (int*)malloc(sizeof(int));
     
@@ -34,19 +34,19 @@ SCENARIO("calculator di", "[di]") {
     
 	REQUIRE( rv == nullptr );
 }
-SCENARIO("calculator power", "[power]") {
-    float a = 3.0;
+SCENARIO("calculator pow", "[pow]") {
+    float a = 2.0;
     float b = 1.0;
-    int* ext = (int*)malloc(sizeof(int));
+    int* extent = (int*)malloc(sizeof(int));
     int* c = (int*)malloc(sizeof(int));
-    *ext = 2;
+    *extent = -1;
     
-    double rv = power( a, ext, c );
+    double rv = power( a, extent, c );
     
-	REQUIRE( rv == 9 );
+	REQUIRE( rv == 0.5 );
 }
-SCENARIO("calculator squareroot", "[squareroot]") {
-    float a = -7.0;
+SCENARIO("calculator sq", "[sq]") {
+    float a = -9.0;
     float b = 1.0;
     int* c = (int*)malloc(sizeof(int));
     
