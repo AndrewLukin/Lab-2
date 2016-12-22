@@ -26,7 +26,7 @@ double *di ( float a,  float b, int* c)
 			return nullptr; 
 		}
 }
-double pow ( float a, int* ext,  int* c)
+double power ( float a, int* ext,  int* c)
 {
 	float a2 = a;
 	
