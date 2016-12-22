@@ -22,7 +22,7 @@ int main()
 	cout << "a^e, e = ";
 	cin >> *ext;
 	power(a, ext, c);
-	if ( *c == 0 ) cout << pow(a, ext, c) << endl;
+	if ( *c == 0 ) cout << power(a, ext, c) << endl;
 		else cout << "Invalid value for a" << endl;
 	sq(a,c);
 	if ( *c == 0 ) cout << squareroot(a,c) << endl;
