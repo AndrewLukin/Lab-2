@@ -1,7 +1,7 @@
 double sum ( float a,  float b)
 {
 	return a + b;
-}
+} 
 double sub ( float a,  float b)
 {
 	return a - b;
