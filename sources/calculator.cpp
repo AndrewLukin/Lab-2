@@ -6,12 +6,12 @@ double sub ( float a,  float b)
 {
 	return a - b;
 }
-double mult ( float a,  float b)
+double multip ( float a,  float b)
 {
 	if ( a != 0 && b != 0 ) return a * b;
 		else if ( a == 0 || b == 0 ) return 0;
 }
-double *div ( float a,  float b, int* c)
+double *di ( float a,  float b, int* c)
 {
 	if ( a != 0 && b != 0  ) 
 	{ 
@@ -26,24 +26,24 @@ double *div ( float a,  float b, int* c)
 			return nullptr; 
 		}
 }
-double pow ( float a, int* extent,  int* c)
+double pow ( float a, int* ext,  int* c)
 {
 	float a2 = a;
 	
 	if ( a != 0 )
 	{
 		*c = 0;
-		if ( *extent < 0 )
+		if ( *ext < 0 )
 	{
-		for (unsigned int i = 1; i < -*extent; ++i)
+		for (unsigned int i = 1; i < -*ext; ++i)
 		{
 			a = a * a2;
 		}
 		a = (float)1 / a;
 	}
-	    else if ( *extent > 0 ) 
+	    else if ( *ext > 0 ) 
 	    {
-			for (unsigned int i = 1; i < *extent; ++i)
+			for (unsigned int i = 1; i < *ext; ++i)
 		    {
 			a = a * a2;
 		    }
@@ -52,12 +52,12 @@ double pow ( float a, int* extent,  int* c)
 	
 	return (double) a;
 	}
-	else if ( a == 0 && *extent < 0 ) *c = 1;
-	else if ( a == 0 && *extent > 0 ) return 0;
-	else if ( a == 0 && *extent == 0 ) return 1;
+	else if ( a == 0 && *ext < 0 ) *c = 1;
+	else if ( a == 0 && *ext > 0 ) return 0;
+	else if ( a == 0 && *ext == 0 ) return 1;
 	
 }
-double *sq ( float a, int* c )
+double *squareroot ( float a, int* c )
 {
 	float xn = 1.0;  
 	float xn1 = 2.0;
