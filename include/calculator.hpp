@@ -1,6 +1,6 @@
-double sum(double a, double b);
-double sub(double a, double b);
-double multip(double a, double b);
-double *di ( double a,  double b, int c);
-double power(double a, int c);
-double *squareroot ( double a, int c );
+double sum ( float a,  float b);
+double sub ( float a,  float b);
+double mult ( float a,  float b);
+double *div ( float a,  float b, int* c );
+double pow ( float a, int* extent, int* c);
+double *sq ( float a, int* c );
