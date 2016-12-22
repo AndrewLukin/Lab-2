@@ -45,17 +45,6 @@ SCENARIO("calculator power", "[power]") {
     
 	REQUIRE( rv == 9 );
 }
-SCENARIO("calculator power", "[power]") {
-    float a = 4.0;
-    float b = 1.0;
-    int* ext = (int*)malloc(sizeof(int));
-    int* c = (int*)malloc(sizeof(int));
-    *ext = -1;
-    
-    double rv = power( a, ext, c );
-    
-	REQUIRE( rv == 0.25 );
-}
 SCENARIO("calculator squareroot", "[squareroot]") {
     float a = -7.0;
     float b = 1.0;
