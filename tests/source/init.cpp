@@ -39,7 +39,7 @@ SCENARIO("calculator di", "[di]") {
     float b = 4.0;
     int* c = (int*)malloc(sizeof(int));
     
-    double rv = di( a, b, c );
+    double *rv = di( a, b, c );
     
 	REQUIRE( rv == 2 );
 }
@@ -64,15 +64,6 @@ SCENARIO("calculator power", "[power]") {
     double rv = power( a, ext, c );
     
 	REQUIRE( rv == 0.25 );
-}
-SCENARIO("calculator squareroot", "[squareroot]") {
-    float a = 4;
-    float b = 1.0;
-    int* c = (int*)malloc(sizeof(int));
-    
-    double *rv = squareroot( a, c );
-    
-	REQUIRE( rv == 2 );
 }
 SCENARIO("calculator squareroot", "[squareroot]") {
     float a = -7.0;
