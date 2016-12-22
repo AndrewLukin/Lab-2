@@ -34,15 +34,6 @@ SCENARIO("calculator di", "[di]") {
     
 	REQUIRE( rv == nullptr );
 }
-SCENARIO("calculator di", "[di]") {
-    float a = 8.0;
-    float b = 4.0;
-    int* c = (int*)malloc(sizeof(int));
-    
-    double *rv = di( a, b, c );
-    
-	REQUIRE( rv == 2 );
-}
 SCENARIO("calculator power", "[power]") {
     float a = 3.0;
     float b = 1.0;
