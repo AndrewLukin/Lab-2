@@ -27,5 +27,5 @@ int main()
 	squareroot(a,c);
 	if ( *c == 0 ) cout << squareroot(a,c) << endl;
 		else cout << "Invalid value for a" << endl;
-	return 0;
+	system("pause");
 }
