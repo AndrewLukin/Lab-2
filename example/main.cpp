@@ -17,14 +17,14 @@ int main()
 	cout << sub(a,b) << endl;
 	cout << multip(a,b) << endl;
 	di(a,b,c);
-	if ( *c == 0 ) cout << div(a,b,c) << endl;
+	if ( *c == 0 ) cout << di(a,b,c) << endl;
 		else cout << "Invalid value for b" << endl;
 	cout << "a^e, e = ";
 	cin >> *ext;
 	power(a, ext, c);
 	if ( *c == 0 ) cout << power(a, ext, c) << endl;
 		else cout << "Invalid value for a" << endl;
-	sq(a,c);
+	squareroot(a,c);
 	if ( *c == 0 ) cout << squareroot(a,c) << endl;
 		else cout << "Invalid value for a" << endl;
 	return 0;
